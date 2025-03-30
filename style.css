@@ -37,13 +37,34 @@ body {
   box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
 }
 
-.netlify-logo {
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--neon-blue);
+  box-shadow: 0 0 15px var(--neon-blue);
+}
+
+.profile-text {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: var(--neon-pink);
+  text-shadow: 0 0 10px var(--neon-pink);
+}
+
+.github-logo {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.netlify-logo img {
+.github-logo img {
   height: 40px;
+  filter: brightness(1.2);
 }
 
 .countdown-container {
