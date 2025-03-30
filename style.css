@@ -1,4 +1,123 @@
-html {
-  height: 100%;
+
+:root {
+  --neon-blue: #00f3ff;
+  --neon-pink: #ff00ff;
+  --dark-bg: #0a0a0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--dark-bg);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0a0a0f 0%, #1a1a2f 100%);
+}
+
+.container {
   width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
+}
+
+.netlify-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.netlify-logo img {
+  height: 40px;
+}
+
+.countdown-container {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 30px 0;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+
+.vote-counter {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.neon-text {
+  color: var(--neon-pink);
+  text-shadow: 0 0 10px var(--neon-pink);
+  font-size: 1.5em;
+}
+
+.vote-button {
+  display: block;
+  width: 200px;
+  margin: 30px auto;
+  padding: 15px;
+  background: transparent;
+  border: 2px solid var(--neon-blue);
+  color: var(--neon-blue);
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vote-button:hover {
+  background: var(--neon-blue);
+  color: var(--dark-bg);
+  box-shadow: 0 0 20px var(--neon-blue);
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--neon-blue);
+}
+
+@media (max-width: 600px) {
+  .glass-card {
+    padding: 20px;
+  }
+  
+  .countdown-container {
+    font-size: 1.8em;
+  }
+  
+  footer nav {
+    gap: 10px;
+  }
 }

@@ -1,16 +1,42 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Cyberpunk Voting</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  Hello world
+  <div class="container">
+    <div class="glass-card">
+      <div class="netlify-logo">
+        <img src="https://www.netlify.com/v3/img/components/netlify-light.svg" alt="Netlify">
+      </div>
+      <div class="countdown-container">
+        <div id="countdown"></div>
+      </div>
+      <div class="vote-counter">
+        <div class="neon-text">9/10 votes | 1 remaining</div>
+      </div>
+      <button class="vote-button" onclick="window.location.href='#'">VOTE NOW</button>
+    </div>
+    <footer>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Support</a>
+        <a href="#">Careers</a>
+        <a href="#">Developers</a>
+        <a href="#">Press</a>
+      </nav>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
-
 </html>
