@@ -1,6 +1,6 @@
 
 function updateCountdown() {
-  const endDate = new Date('April 1, 2025 00:00:00').getTime();
+  const endDate = new Date('April 19, 2025 00:00:00').getTime();
   const now = new Date().getTime();
   const timeLeft = endDate - now;
 
